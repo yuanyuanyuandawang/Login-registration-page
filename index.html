@@ -1,0 +1,75 @@
+<!--html:5快速打出基本框架-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>界面</title>
+    <!--rel属性规定当前文档与被链接文档之间的关系。
+    但是，只有 rel 属性的 "stylesheet" 值得到了
+    所有浏览器的支持。其他值只得到了部分地支持。 -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!--登录页面-->
+        <div class="login-box">
+            <!--左上角三个点-->
+            <div class="apple-btn login-apple">
+                <li class="red-btn"></li>
+                <li class="yellow-btn"></li>
+                <li class="green-btn"></li>
+            </div>
+            <!--LOGIN-->
+            <div class="title">LOGIN</div>
+            <!--表单-->
+            <div class="input">
+                <input type="text" placeholder="Input">
+            </div>
+            <div class="input">
+                <input type="password"  placeholder="Input your password">
+            </div>
+            <!--登录-->
+            <div class="btn login-btn">
+                <span>登录</span>
+            </div>
+            <!--三角形部分-->
+            <div class="change-box login-change">
+                <div class="change-btn toSign">
+                    <span>去注册</span>
+                </div>
+            </div>
+        </div>
+
+        <!--注册页面-->
+        <div class="sign-box">
+            <div class="apple-btn sign-apple">
+                <li class="red-btn"></li>
+                <li class="yellow-btn"></li>
+                <li class="green-btn"></li>
+            </div>
+
+            <div class="title">Sign</div>
+
+            <div class="input">
+                <input type="text"  placeholder="Have A Good Name?">
+            </div>
+            <div class="input">
+                <input type="password"  placeholder="Keep Secret">
+            </div>
+
+            <div class="btn sign-btn">
+                <span>注册</span>
+            </div>
+
+            <div class="change-box sign-change">
+                <div class="change-btn toLogin">
+                    <span>去登陆</span>
+                </div>
+            </div>
+    </div>
+    <!--通过CDN引入jQuery-->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
